@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Blank </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <img
+      [src]="imageUrl"
+      alt="Converted Image"
+      *ngIf="imageUrl"
+      style="width: 400px"
+    />
+    <ion-button (click)="takePictureAndCompress()">Camera</ion-button>
+  </div>
+</ion-content>
